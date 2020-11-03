@@ -1,0 +1,152 @@
+@import '../../sass/mixins';
+@import '../../sass/variables.scss';
+
+#contact-container {
+    width: 100%;
+    padding: 20px 0px 40px 0px;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    h1 {
+        color: $title-color;
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 0;
+        padding-top: 10px;
+        text-align: center;  
+        padding-top: 30px;
+    } 
+    .contact-body {
+        display: flex;
+        flex-direction: column;
+        @include breakpoint-desktop-1 {
+            flex-direction: row;
+            width: 100%;
+        }
+        .contact-map {
+            margin: 50px 15px 15px 15px;
+            @include breakpoint-desktop-1 {
+                width: 50%;
+                height: 486px;
+            }
+        }
+        .contact-information {
+            margin: 15px;
+            @include breakpoint-desktop-1 {
+                width: 50%;
+            }
+            .contact-address {
+                display: flex;
+                flex-direction: column;
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                @include breakpoint-desktop-1 {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 30px 0px 0px 0px;
+                }
+                .address-icon-info {
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                    @media (min-width: 768px) and (max-width: 1024px) {
+                        &:nth-of-type(1) {
+                            width: 33%;
+                        }
+                        &:nth-of-type(2) {
+                            width: 33%;
+                        }
+                        &:nth-of-type(3) {
+                            width: 33%;
+                        }
+                    }
+                    @include breakpoint-desktop-1 {
+                        &:nth-of-type(1) {
+                            width: 33%;
+                        }
+                        &:nth-of-type(2) {
+                            width: 33%;
+                        }
+                        &:nth-of-type(3) {
+                            width: 33%;
+                        }
+                    }
+                    .address-icon {
+                        height: 100%;
+                        font-size: 20px;
+                        float: left;
+                        color: $main-color;
+                        line-height: 1;
+                        margin-right: 5px;
+                        margin-top: 10px;
+                        @include breakpoint-tablet {
+                            margin-top: 0px;
+                        }
+                    }
+                }
+            }
+            .contact-form {
+                display: flex;
+                flex-direction: column;
+                .contact-input {
+                    border: 1px solid #ced4da;
+                    height: 30px;
+                    padding: 6px 0px 4px 12px;
+                    margin-top: 15px;
+                    font-size: 15px;
+                    box-shadow: none;
+                    &:focus {
+                        color: #495057;
+                        background-color: $white;
+                        border-color: $main-color;
+                        outline: 0;
+                    }
+                }
+                .contact-textarea {
+                    border: 1px solid #ced4da;
+                    height: 100px;
+                    padding: 4px 0px 4px 12px;
+                    margin: 15px 0px 20px 0px;
+                    font-size: 14px;
+                    box-shadow: none;
+                    &:focus {
+                        color: #495057;
+                        background-color: $white;
+                        border-color: $main-color;
+                        outline: 0;  
+                    }
+                }
+                .contact-form-row {
+                    display: flex;
+                    flex-direction: column;
+                    @include breakpoint-desktop-1 {
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                    .contact-input-wrap {
+                        @include breakpoint-desktop-1 {
+                            width: 46%;
+                        }
+                    }
+                }
+                .contact-send-button {
+                    width: 165px;
+                    color: $white;
+                    font-size: 17px;
+                    font-weight: lighter;
+                    height: 40px;
+                    background-color: $button-color;
+                    border-radius: 20px;
+                    border-style: none;
+                    margin: auto;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $main-color;
+                        transition: all .2s linear;
+                    }
+                }
+            }         
+        }
+    }
+}
