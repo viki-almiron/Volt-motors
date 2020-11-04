@@ -8,18 +8,17 @@ import Footer from './components/Footer/Footer';
 import './App.scss';
 
 function App() {
-
   const [cardIndex, setCardIndex] = useState(0);
 
   return (
     <React.Fragment>
       <Nav />
       <div className="main-container">
-      <Header
-        cardIndex={cardIndex}
-        setCardIndex={setCardIndex}
-      />
-      <CardContainer cardIndex={cardIndex}/>
+        <Header
+          cardIndex={cardIndex}
+          setCardIndex={setCardIndex}
+        />
+        <CardContainer cardIndex={cardIndex}/>
       </div>
       <Partners />
       <Contact />

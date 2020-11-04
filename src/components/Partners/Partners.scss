@@ -12,25 +12,8 @@
     @include breakpoint-tablet {
         padding: 20px 40px 12% 40px;
     }
-    @include breakpoint-tablet-desktop {
-        padding: 25px 134px 10% 134px;
-    }
-    @include breakpoint-desktop-1 {
-        padding: 40px 50px 9% 50px;
-    }
-    @include breakpoint-desktop-2 {
-        padding: 40px 46px 8% 46px;
-    }
-    @include breakpoint-desktop-2 {
-        padding: 40px 46px 7% 46px;
-    }
     h1 {
-        color: $title-color;
-        font-size: $font-xxl;
-        font-weight: $medium;
-        margin-bottom: 30px;
-        padding-top: 10px;
-        text-align: center;  
+        @include title-h1; 
     }
     .partners-container {
         display: flex;
@@ -47,25 +30,10 @@
             height: 160px;
             justify-content: center;
             overflow: hidden;
-            width: 100%;
-            @include breakpoint-tablet {
-                width: 228px;
-            }
-            @include breakpoint-desktop-1 {
-                width: 230px;
-            }
-            @include breakpoint-desktop-2 {
-                width: 276px;
-            }
+            width: 276px;
             img {
                 transition: all .4s ease-in-out;
-                width: 55%;
-                @include breakpoint-mobile-2 {
-                    width: 30%;
-                }
-                @include breakpoint-tablet {
-                    width: 45%;
-                }
+                width: 45%;
             }
             &:hover img {
                 transform: scale(1.2);

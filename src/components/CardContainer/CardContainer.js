@@ -38,23 +38,24 @@ const CardContainer = ({cardIndex}) => {
     return (
         <React.Fragment>
             {
-            loading ? <img src="/images/loader4.gif" className="car-loading"/> : 
-            <section className="cards-container" id="slider">
-            <div className="cards-container-hidden" style={{transform: `translateX(${pixels}px)`}}>
-                {
-                    vehicles.map(vehicle => {
-                        return(
-                            <Card
-                                image={vehicle.image}
-                                model={vehicle.model}
-                                description={vehicle.description}
-                                caracs={vehicle.caracs}
-                            />
-                        )
-                    })
-                }
-            </div>
-        </section>
+                loading ? <img src="/images/loader4.gif" className="car-loading"/> : 
+                <section className="cards-container" id="slider">
+                <div className="cards-container-hidden" style={{transform: `translateX(${pixels}px)`}}>
+                    {
+                        vehicles.map(vehicle => {
+                            return(
+                                <Card
+                                    key={vehicle.model}
+                                    image={vehicle.image}
+                                    model={vehicle.model}
+                                    description={vehicle.description}
+                                    caracs={vehicle.caracs}
+                                />
+                            )
+                        })
+                    }
+                </div>
+            </section>
         }
         </React.Fragment>     
     );

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Card.scss';
 
 const Card = ({image, model, description, caracs}) => {
-
     const [displayContent, setDisplayContent] = useState(false);
 
     return (
@@ -18,7 +17,7 @@ const Card = ({image, model, description, caracs}) => {
                         { description }
                         {
                             caracs.map (carac => {
-                                return <li>{carac}</li>
+                                return <li key={carac}>{carac}</li>
                             })
                         }
                     </div>
