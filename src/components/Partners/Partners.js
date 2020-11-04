@@ -8,27 +8,27 @@ const Partners = () => {
           
           <div className="partners-container">
             <div className="partners-img">
-              <img src='/images/zurich.png' alt="Partner-1" />
+              <img src="/images/zurich.png" alt="Partner-1" />
             </div>
     
             <div className="partners-img">
-              <img src='/images/bbva.png' alt="Partner-2" />
+              <img src="/images/bbva.png" alt="Partner-2" />
             </div>
     
             <div className="partners-img">
-              <img src='/images/movistar.png' alt="Partner-3" />
+              <img src="/images/movistar.png" alt="Partner-3" />
             </div>
     
             <div className="partners-img">
-              <img src='/images/oresteberta.png' alt="Partner-4" />
+              <img src="/images/oresteberta.png" alt="Partner-4" />
             </div>
     
             <div className="partners-img">
-              <img src='/images/dta.png' alt="Partner-5" />
+              <img src="/images/dta.png" alt="Partner-5" />
             </div>
     
             <div className="partners-img">
-              <img src='/images/inti.png' alt="Partner-6" />
+              <img src="/images/inti.png" alt="Partner-6" />
             </div>
           </div>
         </section>
